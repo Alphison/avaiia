@@ -1,0 +1,37 @@
+.notification {
+    position: fixed;
+    bottom: 160px;
+    left: 40px;
+    z-index: 10;
+
+    background: rgba(26, 26, 26, 0.85);
+
+    padding: 20px;
+    width: 400px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    transition-property: left, visibility, opacity;
+
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-left: 5px solid black;
+
+    text-align: center;
+
+    &--visible {
+        visibility: visible;
+        opacity: 1;
+        right: 20px;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 15;
+        filter: none;
+        color: white;
+    }
+}

@@ -1,0 +1,139 @@
+#product .product {
+
+    &-content{
+        padding: 110px 0;
+    }
+
+    &-grid {
+        grid-template-columns: 50% 1fr;
+    }
+
+    &__preview {
+        object-fit: contain;
+        height: 630px!important;
+    }
+
+    &__name {
+        margin-bottom: 35px;
+    }
+
+    &__price {
+        margin-bottom: 35px;
+    }
+
+    &-sizes {
+        margin-bottom: 35px;
+
+        .size {
+            font-family: 'Losta Masta';
+            font-size: 32px;
+            margin: 0 10px;
+        }
+        input{
+            display: none;
+        }
+
+        input:checked + .size{
+            text-decoration: underline;
+        }
+
+        .size__guide {
+            border-bottom: 2px solid var(--text-color);
+        }
+    }
+
+    &__color {
+        margin-bottom: 35px;
+
+        .color__text {
+            margin-left: 15px;
+        }
+    }
+
+    .button {
+        margin-bottom: 55px;
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+    }
+
+    &__article {
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
+
+    &__text{
+        word-break: break-word;
+    }
+
+    &-images {
+        &__list {
+            margin-top: 25px;
+
+            img {
+                cursor: pointer;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .addToCart-btn {
+        max-width: 100%;
+    }
+
+    &-accordions{
+        margin: 50px 0;
+        .accordion{
+            border-top: 2px solid var(--text-color);
+            //border-bottom: 2px solid var(--text-color);
+            padding: 60px 0 30px;
+            overflow: hidden;
+
+            cursor: pointer;
+
+            &:first-child{
+                border-top: 2px solid var(--text-color);
+            }
+
+            &:last-child{
+                border-bottom: 2px solid var(--text-color);
+
+            }
+            &-top{
+                img{
+                    cursor: pointer;
+                    transition: all 0.4s;
+                }
+            }
+
+            &-arrow{
+                font-size: 55px;
+
+                transition: transform ease-in-out 0.2s;
+            }
+            &-bottom{
+                margin-top: 30px;
+                overflow: hidden;
+                max-height: 0;
+                transition: all ease-in-out 0.4s;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.swiper-top .swiper-slide{
+    height: 630px!important;
+    object-fit: cover;
+    width: 100%;
+}
+
+.swiper-free-mode>.swiper-wrapper{
+    max-height: 200px;
+    img{
+        object-fit: cover;
+    }
+}
+

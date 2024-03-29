@@ -1,0 +1,50 @@
+.catalog {
+    grid-auto-rows: 350px;
+    padding: 110px 0;
+
+    min-height: 60vh;
+
+    &__title {
+        font-size: 32px;
+    }
+
+    &-description{
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .product {
+        position: relative;
+        font-size: 24px;
+
+        &-plate {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+
+            background: var(--text-color);
+            background-color: rgba($color: #1D1D1B, $alpha: 0.15);
+        }
+
+        &__text {
+            font-size: 16px;
+            padding: 8px 0;
+            font-weight: normal;
+        }
+
+        &-img {
+            height: 100%;
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+        }
+
+        &__item {
+            img {
+                width: 32px;
+            }
+        }
+    }
+}

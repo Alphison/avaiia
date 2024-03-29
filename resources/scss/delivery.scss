@@ -1,0 +1,42 @@
+.address{
+    &-wrapper{
+        max-width: none!important;
+    }
+    &-container{
+        font-size: 22px;
+
+        input{
+            display: none;
+        }
+
+        input:checked + label{
+            border: 2px solid var(--text-color);
+        }
+
+        label{
+            min-width: 100%;
+            padding: 15px 5px;
+            border-radius: 8px;
+
+            cursor: pointer;
+        }
+
+        .back-to-cart{
+            position: absolute;
+            top: 47px;
+            left: 20px;
+            font-size: 18px;
+            span{
+                font-size: 45px;
+            }
+        }
+
+        .button{
+            max-width: none;
+            width: 45%;
+            align-self: center;
+        }
+
+    }
+
+}

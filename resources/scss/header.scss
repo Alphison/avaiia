@@ -1,0 +1,115 @@
+.header {
+    padding: 30px 0;
+
+    &-content{
+        .logo{
+            width: 150px;
+            & > svg {
+                width: 100%;
+            }
+        }
+    }
+
+    .menu__icon {
+        width: 35px;
+    }
+
+
+
+    .menu {
+        &__link {
+            transition: all 0.2s ease-in-out;
+            text-transform: uppercase;
+        }
+    }
+
+    .burger-btn {
+        width: 175px;
+        cursor: pointer;
+    }
+
+    .header-mobile-links{
+        display: none;
+    }
+
+    .burger {
+        &-nav {
+            transform: translateX(-100%);
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #f2f2f2;
+            padding: 35px;
+            min-height: 100%;
+            transition: transform ease-in-out .2s;
+
+            .close-btn{
+                img{
+                    max-width: 35px;
+                }
+            }
+            &.show{
+                transform: translateX(0%);
+            }
+
+            .submenu{
+                padding: 20px 0 20px 50px;
+                gap: 15px 35px;
+            }
+        }
+
+
+
+        &-btn {
+            width: 175px;
+            cursor: pointer;
+        }
+
+        &-footer{
+            margin: auto 0 0 0;
+            text-align: center;
+            font-size: 18px;
+
+            a{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .menu-cart-link{
+        display: none;
+        position: relative;
+    }
+
+    .menu__item{
+        position: relative;
+    }
+
+    .menu-cart-link__isset{
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background: #9E303A;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+
+    .menu__item-lang{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    .menu__item-lang-mobile{
+        display: none;
+        gap: 6px;
+        align-items: center;
+    }
+
+}

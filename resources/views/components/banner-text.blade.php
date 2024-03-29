@@ -1,0 +1,2 @@
+<h2 class="banner__text "><a href="{{ route('collections-page') }}" class="color_for_banner">{{ __('home.gallery') }}</a></h2>
+<p class="banner-second__text color_for_banner">{{ __('home.text') }} <br> {{ __('home.text2') }}</p>

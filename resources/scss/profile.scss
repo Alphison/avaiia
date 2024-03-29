@@ -1,0 +1,35 @@
+.user{
+    padding: 110px 0;
+    h2{
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    &-content{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 50px;
+    }
+    hr{
+        margin: 30px 0;
+        width: 80%;
+        color: var(--text-color);
+    }
+
+    &-info{
+        border-right: 1px solid rgba(29, 29, 27, 0.61);
+    }
+
+    &__item{
+        font-size: 22px;
+        p{
+            display: flex;
+            align-items: center;
+            span{
+                margin-right: 15px;
+            }
+            &:first-child{
+                font-weight: 600;
+            }
+        }
+    }
+}
